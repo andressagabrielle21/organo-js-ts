@@ -21,7 +21,7 @@ const Formulario = ({newAddUserInfo, times}: FormProps) => {
     const dateCreated = () => {
         const data = new Date()
 
-        const fullDate = data.toLocaleDateString()
+        const fullDate = data.toLocaleDateString("default", {day: "2-digit", month:"long", year: "numeric"})
 
         setDateCreate(fullDate)
     }

@@ -13,7 +13,11 @@ const Colaborador = ({ nome, imagem, cargo, corDeFundo, dateCreate }: CorProp) =
         <div className='rodape'>
             <h4>{nome}</h4>
             <h5>{cargo}</h5>
-            <h5>Usuário criado em: {dateCreate}</h5>
+            <h5>Usuário criado em: <br /> 
+                <span style={{fontSize: '15px', fontWeight: "normal"}}>
+                    {dateCreate}
+                </span>
+            </h5>
         </div>
     </div>)
 }
